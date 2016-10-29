@@ -1,0 +1,1689 @@
+exports[`parser Parse enum.graphql 1`] = `
+"[
+  {
+    \"kind\": \"EnumTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"Site\",
+      \"loc\": { \"start\": [ 1, 5 ], \"end\": [ 1, 9 ] }
+    },
+    \"values\": [
+      {
+        \"kind\": \"EnumValueDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"DESKTOP\",
+          \"loc\": { \"start\": [ 2, 2 ], \"end\": [ 2, 9 ] }
+        },
+        \"directives\": null,
+        \"loc\": { \"start\": [ 2, 2 ], \"end\": [ 2, 9 ] }
+      },
+      {
+        \"kind\": \"EnumValueDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"MOBILE\",
+          \"loc\": { \"start\": [ 3, 2 ], \"end\": [ 3, 8 ] }
+        },
+        \"directives\": null,
+        \"loc\": { \"start\": [ 3, 2 ], \"end\": [ 3, 8 ] }
+      }
+    ],
+    \"directives\": null
+  },
+  {
+    \"kind\": \"EnumTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"AnnotatedEnum\",
+      \"loc\": { \"start\": [ 6, 5 ], \"end\": [ 6, 18 ] }
+    },
+    \"values\": [
+      {
+        \"kind\": \"EnumValueDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"ANNOTATED_VALUE\",
+          \"loc\": { \"start\": [ 7, 2 ], \"end\": [ 7, 17 ] }
+        },
+        \"directives\": [
+          {
+            \"kind\": \"Directive\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"onEnumValue\",
+              \"loc\": { \"start\": [ 7, 19 ], \"end\": [ 7, 30 ] }
+            },
+            \"arguments\": null,
+            \"loc\": { \"start\": [ 7, 18 ], \"end\": [ 7, 30 ] }
+          }
+        ],
+        \"loc\": { \"start\": [ 7, 2 ], \"end\": [ 7, 30 ] }
+      },
+      {
+        \"kind\": \"EnumValueDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"OTHER_VALUE\",
+          \"loc\": { \"start\": [ 8, 2 ], \"end\": [ 8, 13 ] }
+        },
+        \"directives\": null,
+        \"loc\": { \"start\": [ 8, 2 ], \"end\": [ 8, 13 ] }
+      }
+    ],
+    \"directives\": [
+      {
+        \"kind\": \"Directive\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"onEnum\",
+          \"loc\": { \"start\": [ 6, 20 ], \"end\": [ 6, 26 ] }
+        },
+        \"arguments\": null,
+        \"loc\": { \"start\": [ 6, 19 ], \"end\": [ 6, 26 ] }
+      }
+    ]
+  }
+]
+"
+`;
+
+exports[`parser Parse fragment.graphql 1`] = `
+"[
+  {
+    \"kind\": \"FragmentDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"frag\",
+      \"loc\": { \"start\": [ 1, 9 ], \"end\": [ 1, 13 ] }
+    },
+    \"typeCondition\": {
+      \"kind\": \"Name\",
+      \"value\": \"Friend\",
+      \"loc\": { \"start\": [ 1, 17 ], \"end\": [ 1, 23 ] }
+    },
+    \"selectionSet\": {
+      \"kind\": \"SelecitonSet\",
+      \"selections\": [
+        {
+          \"kind\": \"Field\",
+          \"alias\": null,
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"foo\",
+            \"loc\": { \"start\": [ 2, 2 ], \"end\": [ 2, 5 ] }
+          },
+          \"args\": [
+            {
+              \"kind\": \"Argument\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"size\",
+                \"loc\": { \"start\": [ 2, 6 ], \"end\": [ 2, 10 ] }
+              },
+              \"value\": {
+                \"kind\": \"Value\",
+                \"variant\": \"Variable\",
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"size\",
+                  \"loc\": { \"start\": [ 2, 13 ], \"end\": [ 2, 17 ] }
+                },
+                \"loc\": { \"start\": [ 2, 12 ], \"end\": [ 2, 17 ] }
+              },
+              \"loc\": { \"start\": [ 2, 6 ], \"end\": [ 2, 17 ] }
+            },
+            {
+              \"kind\": \"Argument\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"bar\",
+                \"loc\": { \"start\": [ 2, 19 ], \"end\": [ 2, 22 ] }
+              },
+              \"value\": {
+                \"kind\": \"Value\",
+                \"variant\": \"Variable\",
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"b\",
+                  \"loc\": { \"start\": [ 2, 25 ], \"end\": [ 2, 26 ] }
+                },
+                \"loc\": { \"start\": [ 2, 24 ], \"end\": [ 2, 26 ] }
+              },
+              \"loc\": { \"start\": [ 2, 19 ], \"end\": [ 2, 26 ] }
+            },
+            {
+              \"kind\": \"Argument\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"obj\",
+                \"loc\": { \"start\": [ 2, 28 ], \"end\": [ 2, 31 ] }
+              },
+              \"value\": {
+                \"kind\": \"Value\",
+                \"variant\": \"ObjectValue\",
+                \"fields\": [
+                  {
+                    \"kind\": \"ObjectField\",
+                    \"name\": {
+                      \"kind\": \"Name\",
+                      \"value\": \"key\",
+                      \"loc\": { \"start\": [ 2, 34 ], \"end\": [ 2, 37 ] }
+                    },
+                    \"value\": {
+                      \"kind\": \"Value\",
+                      \"variant\": \"StringValue\",
+                      \"value\": \"value\",
+                      \"loc\": { \"start\": [ 2, 45 ], \"end\": [ 2, 46 ] }
+                    },
+                    \"loc\": { \"start\": [ 2, 34 ], \"end\": [ 2, 46 ] }
+                  }
+                ],
+                \"loc\": { \"start\": [ 2, 33 ], \"end\": [ 2, 47 ] }
+              },
+              \"loc\": { \"start\": [ 2, 28 ], \"end\": [ 2, 47 ] }
+            }
+          ],
+          \"selectionSet\": null,
+          \"directives\": null
+        }
+      ]
+    },
+    \"directives\": null
+  }
+]
+"
+`;
+
+exports[`parser Parse input.graphql 1`] = `
+"[
+  {
+    \"kind\": \"ObjectTypeDef\",
+    \"kind\": \"ObjectTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"InputType\",
+      \"loc\": { \"start\": [ 1, 6 ], \"end\": [ 1, 15 ] }
+    },
+    \"fields\": [
+      {
+        \"kind\": \"InputValueDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"key\",
+          \"loc\": { \"start\": [ 2, 2 ], \"end\": [ 2, 5 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"NonNull\",
+          \"type\": {
+            \"kind\": \"Type\",
+            \"variant\": \"Named\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"String\",
+              \"loc\": { \"start\": [ 2, 7 ], \"end\": [ 2, 13 ] }
+            }
+          },
+          \"loc\": { \"start\": [ 2, 7 ], \"end\": [ 2, 14 ] }
+        },
+        \"defaultValue\": null,
+        \"directives\": null,
+        \"loc\": { \"start\": [ 2, 2 ], \"end\": [ 2, 14 ] }
+      },
+      {
+        \"kind\": \"InputValueDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"answer\",
+          \"loc\": { \"start\": [ 3, 2 ], \"end\": [ 3, 8 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Int\",
+            \"loc\": { \"start\": [ 3, 10 ], \"end\": [ 3, 13 ] }
+          }
+        },
+        \"defaultValue\": {
+          \"kind\": \"Value\",
+          \"variant\": \"IntValue\",
+          \"value\": \"42\",
+          \"loc\": { \"start\": [ 3, 16 ], \"end\": [ 3, 18 ] }
+        },
+        \"directives\": null,
+        \"loc\": { \"start\": [ 3, 2 ], \"end\": [ 3, 18 ] }
+      }
+    ],
+    \"directives\": null
+  },
+  {
+    \"kind\": \"ObjectTypeDef\",
+    \"kind\": \"ObjectTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"AnnotatedInput\",
+      \"loc\": { \"start\": [ 6, 6 ], \"end\": [ 6, 20 ] }
+    },
+    \"fields\": [
+      {
+        \"kind\": \"InputValueDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"annotatedField\",
+          \"loc\": { \"start\": [ 7, 2 ], \"end\": [ 7, 16 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Type\",
+            \"loc\": { \"start\": [ 7, 18 ], \"end\": [ 7, 22 ] }
+          }
+        },
+        \"defaultValue\": null,
+        \"directives\": [
+          {
+            \"kind\": \"Directive\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"onField\",
+              \"loc\": { \"start\": [ 7, 24 ], \"end\": [ 7, 31 ] }
+            },
+            \"arguments\": null,
+            \"loc\": { \"start\": [ 7, 23 ], \"end\": [ 7, 31 ] }
+          }
+        ],
+        \"loc\": { \"start\": [ 7, 2 ], \"end\": [ 7, 31 ] }
+      }
+    ],
+    \"directives\": [
+      {
+        \"kind\": \"Directive\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"onInputObjectType\",
+          \"loc\": { \"start\": [ 6, 22 ], \"end\": [ 6, 39 ] }
+        },
+        \"arguments\": null,
+        \"loc\": { \"start\": [ 6, 21 ], \"end\": [ 6, 39 ] }
+      }
+    ]
+  }
+]
+"
+`;
+
+exports[`parser Parse interface.graphql 1`] = `
+"[
+  {
+    \"kind\": \"InterfaceTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"Bar\",
+      \"loc\": { \"start\": [ 1, 10 ], \"end\": [ 1, 13 ] }
+    },
+    \"fields\": [
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"one\",
+          \"loc\": { \"start\": [ 2, 2 ], \"end\": [ 2, 5 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Type\",
+            \"loc\": { \"start\": [ 2, 7 ], \"end\": [ 2, 11 ] }
+          }
+        },
+        \"args\": [],
+        \"directives\": null
+      },
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"four\",
+          \"loc\": { \"start\": [ 3, 2 ], \"end\": [ 3, 6 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"String\",
+            \"loc\": { \"start\": [ 3, 37 ], \"end\": [ 3, 43 ] }
+          }
+        },
+        \"args\": [
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"argument\",
+              \"loc\": { \"start\": [ 3, 7 ], \"end\": [ 3, 15 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"Named\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"String\",
+                \"loc\": { \"start\": [ 3, 17 ], \"end\": [ 3, 23 ] }
+              }
+            },
+            \"defaultValue\": {
+              \"kind\": \"Value\",
+              \"variant\": \"StringValue\",
+              \"value\": \"string\",
+              \"loc\": { \"start\": [ 3, 33 ], \"end\": [ 3, 34 ] }
+            },
+            \"directives\": null,
+            \"loc\": { \"start\": [ 3, 7 ], \"end\": [ 3, 34 ] }
+          }
+        ],
+        \"directives\": null
+      }
+    ],
+    \"directives\": null
+  },
+  {
+    \"kind\": \"InterfaceTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"AnnotatedInterface\",
+      \"loc\": { \"start\": [ 6, 10 ], \"end\": [ 6, 28 ] }
+    },
+    \"fields\": [
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"annotatedField\",
+          \"loc\": { \"start\": [ 7, 2 ], \"end\": [ 7, 16 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Type\",
+            \"loc\": { \"start\": [ 7, 36 ], \"end\": [ 7, 40 ] }
+          }
+        },
+        \"args\": [
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"arg\",
+              \"loc\": { \"start\": [ 7, 17 ], \"end\": [ 7, 20 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"Named\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"Type\",
+                \"loc\": { \"start\": [ 7, 22 ], \"end\": [ 7, 26 ] }
+              }
+            },
+            \"defaultValue\": null,
+            \"directives\": [
+              {
+                \"kind\": \"Directive\",
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"onArg\",
+                  \"loc\": { \"start\": [ 7, 28 ], \"end\": [ 7, 33 ] }
+                },
+                \"arguments\": null,
+                \"loc\": { \"start\": [ 7, 27 ], \"end\": [ 7, 33 ] }
+              }
+            ],
+            \"loc\": { \"start\": [ 7, 17 ], \"end\": [ 7, 33 ] }
+          }
+        ],
+        \"directives\": [
+          {
+            \"kind\": \"Directive\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"onField\",
+              \"loc\": { \"start\": [ 7, 42 ], \"end\": [ 7, 49 ] }
+            },
+            \"arguments\": null,
+            \"loc\": { \"start\": [ 7, 41 ], \"end\": [ 7, 49 ] }
+          }
+        ]
+      }
+    ],
+    \"directives\": [
+      {
+        \"kind\": \"Directive\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"onInterface\",
+          \"loc\": { \"start\": [ 6, 30 ], \"end\": [ 6, 41 ] }
+        },
+        \"arguments\": null,
+        \"loc\": { \"start\": [ 6, 29 ], \"end\": [ 6, 41 ] }
+      }
+    ]
+  }
+]
+"
+`;
+
+exports[`parser Parse operation.graphql 1`] = `
+"[
+  {
+    \"kind\": \"OperationDef\",
+    \"operation\": \"query\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"queryName\",
+      \"loc\": { \"start\": [ 1, 6 ], \"end\": [ 1, 15 ] }
+    },
+    \"selectionSet\": {
+      \"kind\": \"SelecitonSet\",
+      \"selections\": [
+        {
+          \"kind\": \"Field\",
+          \"alias\": {
+            \"kind\": \"Name\",
+            \"value\": \"whoever123is\",
+            \"loc\": { \"start\": [ 2, 2 ], \"end\": [ 2, 14 ] }
+          },
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"node\",
+            \"loc\": { \"start\": [ 2, 16 ], \"end\": [ 2, 20 ] }
+          },
+          \"args\": [
+            {
+              \"kind\": \"Argument\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"id\",
+                \"loc\": { \"start\": [ 2, 21 ], \"end\": [ 2, 23 ] }
+              },
+              \"value\": {
+                \"kind\": \"Value\",
+                \"variant\": \"ListValue\",
+                \"values\": [
+                  {
+                    \"kind\": \"Value\",
+                    \"variant\": \"IntValue\",
+                    \"value\": \"123\",
+                    \"loc\": { \"start\": [ 2, 26 ], \"end\": [ 2, 29 ] }
+                  },
+                  {
+                    \"kind\": \"Value\",
+                    \"variant\": \"IntValue\",
+                    \"value\": \"456\",
+                    \"loc\": { \"start\": [ 2, 31 ], \"end\": [ 2, 34 ] }
+                  }
+                ],
+                \"loc\": { \"start\": [ 2, 25 ], \"end\": [ 2, 35 ] }
+              },
+              \"loc\": { \"start\": [ 2, 21 ], \"end\": [ 2, 35 ] }
+            }
+          ],
+          \"selectionSet\": {
+            \"kind\": \"SelecitonSet\",
+            \"selections\": [
+              {
+                \"kind\": \"Field\",
+                \"alias\": null,
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"id\",
+                  \"loc\": { \"start\": [ 3, 4 ], \"end\": [ 3, 6 ] }
+                },
+                \"args\": null,
+                \"selectionSet\": null,
+                \"directives\": null
+              },
+              {
+                \"kind\": \"InlineFragment\",
+                \"typeCondition\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"User\",
+                  \"loc\": { \"start\": [ 4, 11 ], \"end\": [ 4, 15 ] }
+                },
+                \"selectionSet\": {
+                  \"kind\": \"SelecitonSet\",
+                  \"selections\": [
+                    {
+                      \"kind\": \"Field\",
+                      \"alias\": null,
+                      \"name\": {
+                        \"kind\": \"Name\",
+                        \"value\": \"field2\",
+                        \"loc\": { \"start\": [ 5, 6 ], \"end\": [ 5, 12 ] }
+                      },
+                      \"args\": null,
+                      \"selectionSet\": {
+                        \"kind\": \"SelecitonSet\",
+                        \"selections\": [
+                          {
+                            \"kind\": \"Field\",
+                            \"alias\": null,
+                            \"name\": {
+                              \"kind\": \"Name\",
+                              \"value\": \"id\",
+                              \"loc\": { \"start\": [ 6, 8 ], \"end\": [ 6, 10 ] }
+                            },
+                            \"args\": null,
+                            \"selectionSet\": null,
+                            \"directives\": null
+                          },
+                          {
+                            \"kind\": \"Field\",
+                            \"alias\": {
+                              \"kind\": \"Name\",
+                              \"value\": \"alias\",
+                              \"loc\": { \"start\": [ 7, 8 ], \"end\": [ 7, 13 ] }
+                            },
+                            \"name\": {
+                              \"kind\": \"Name\",
+                              \"value\": \"field1\",
+                              \"loc\": { \"start\": [ 7, 15 ], \"end\": [ 7, 21 ] }
+                            },
+                            \"args\": [
+                              {
+                                \"kind\": \"Argument\",
+                                \"name\": {
+                                  \"kind\": \"Name\",
+                                  \"value\": \"first\",
+                                  \"loc\": {
+                                    \"start\": [ 7, 22 ],
+                                    \"end\": [ 7, 27 ]
+                                  }
+                                },
+                                \"value\": {
+                                  \"kind\": \"Value\",
+                                  \"variant\": \"IntValue\",
+                                  \"value\": \"10\",
+                                  \"loc\": {
+                                    \"start\": [ 7, 28 ],
+                                    \"end\": [ 7, 30 ]
+                                  }
+                                },
+                                \"loc\": {
+                                  \"start\": [ 7, 22 ],
+                                  \"end\": [ 7, 30 ]
+                                }
+                              },
+                              {
+                                \"kind\": \"Argument\",
+                                \"name\": {
+                                  \"kind\": \"Name\",
+                                  \"value\": \"after\",
+                                  \"loc\": {
+                                    \"start\": [ 7, 32 ],
+                                    \"end\": [ 7, 37 ]
+                                  }
+                                },
+                                \"value\": {
+                                  \"kind\": \"Value\",
+                                  \"variant\": \"Variable\",
+                                  \"name\": {
+                                    \"kind\": \"Name\",
+                                    \"value\": \"foo\",
+                                    \"loc\": {
+                                      \"start\": [ 7, 39 ],
+                                      \"end\": [ 7, 42 ]
+                                    }
+                                  },
+                                  \"loc\": {
+                                    \"start\": [ 7, 38 ],
+                                    \"end\": [ 7, 42 ]
+                                  }
+                                },
+                                \"loc\": {
+                                  \"start\": [ 7, 32 ],
+                                  \"end\": [ 7, 42 ]
+                                }
+                              }
+                            ],
+                            \"selectionSet\": {
+                              \"kind\": \"SelecitonSet\",
+                              \"selections\": [
+                                {
+                                  \"kind\": \"Field\",
+                                  \"alias\": null,
+                                  \"name\": {
+                                    \"kind\": \"Name\",
+                                    \"value\": \"id\",
+                                    \"loc\": {
+                                      \"start\": [ 8, 10 ],
+                                      \"end\": [ 8, 12 ]
+                                    }
+                                  },
+                                  \"args\": null,
+                                  \"selectionSet\": null,
+                                  \"directives\": null
+                                },
+                                {
+                                  \"kind\": \"FragmentSpread\",
+                                  \"name\": {
+                                    \"kind\": \"Name\",
+                                    \"value\": \"frag\",
+                                    \"loc\": {
+                                      \"start\": [ 9, 13 ],
+                                      \"end\": [ 9, 17 ]
+                                    }
+                                  },
+                                  \"directives\": null
+                                }
+                              ]
+                            },
+                            \"directives\": [
+                              {
+                                \"kind\": \"Directive\",
+                                \"name\": {
+                                  \"kind\": \"Name\",
+                                  \"value\": \"include\",
+                                  \"loc\": {
+                                    \"start\": [ 7, 46 ],
+                                    \"end\": [ 7, 53 ]
+                                  }
+                                },
+                                \"arguments\": [
+                                  {
+                                    \"kind\": \"Argument\",
+                                    \"name\": {
+                                      \"kind\": \"Name\",
+                                      \"value\": \"if\",
+                                      \"loc\": {
+                                        \"start\": [ 7, 54 ],
+                                        \"end\": [ 7, 56 ]
+                                      }
+                                    },
+                                    \"value\": {
+                                      \"kind\": \"Value\",
+                                      \"variant\": \"Variable\",
+                                      \"name\": {
+                                        \"kind\": \"Name\",
+                                        \"value\": \"foo\",
+                                        \"loc\": {
+                                          \"start\": [ 7, 59 ],
+                                          \"end\": [ 7, 62 ]
+                                        }
+                                      },
+                                      \"loc\": {
+                                        \"start\": [ 7, 58 ],
+                                        \"end\": [ 7, 62 ]
+                                      }
+                                    },
+                                    \"loc\": {
+                                      \"start\": [ 7, 54 ],
+                                      \"end\": [ 7, 62 ]
+                                    }
+                                  }
+                                ],
+                                \"loc\": {
+                                  \"start\": [ 7, 45 ],
+                                  \"end\": [ 7, 63 ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      \"directives\": null
+                    }
+                  ]
+                },
+                \"directives\": [
+                  {
+                    \"kind\": \"Directive\",
+                    \"name\": {
+                      \"kind\": \"Name\",
+                      \"value\": \"defer\",
+                      \"loc\": { \"start\": [ 4, 17 ], \"end\": [ 4, 22 ] }
+                    },
+                    \"arguments\": null,
+                    \"loc\": { \"start\": [ 4, 16 ], \"end\": [ 4, 22 ] }
+                  }
+                ]
+              },
+              {
+                \"kind\": \"InlineFragment\",
+                \"typeCondition\": null,
+                \"selectionSet\": {
+                  \"kind\": \"SelecitonSet\",
+                  \"selections\": [
+                    {
+                      \"kind\": \"Field\",
+                      \"alias\": null,
+                      \"name\": {
+                        \"kind\": \"Name\",
+                        \"value\": \"id\",
+                        \"loc\": { \"start\": [ 14, 6 ], \"end\": [ 14, 8 ] }
+                      },
+                      \"args\": null,
+                      \"selectionSet\": null,
+                      \"directives\": null
+                    }
+                  ]
+                },
+                \"directives\": [
+                  {
+                    \"kind\": \"Directive\",
+                    \"name\": {
+                      \"kind\": \"Name\",
+                      \"value\": \"skip\",
+                      \"loc\": { \"start\": [ 13, 9 ], \"end\": [ 13, 13 ] }
+                    },
+                    \"arguments\": [
+                      {
+                        \"kind\": \"Argument\",
+                        \"name\": {
+                          \"kind\": \"Name\",
+                          \"value\": \"unless\",
+                          \"loc\": { \"start\": [ 13, 14 ], \"end\": [ 13, 20 ] }
+                        },
+                        \"value\": {
+                          \"kind\": \"Value\",
+                          \"variant\": \"Variable\",
+                          \"name\": {
+                            \"kind\": \"Name\",
+                            \"value\": \"foo\",
+                            \"loc\": { \"start\": [ 13, 23 ], \"end\": [ 13, 26 ] }
+                          },
+                          \"loc\": { \"start\": [ 13, 22 ], \"end\": [ 13, 26 ] }
+                        },
+                        \"loc\": { \"start\": [ 13, 14 ], \"end\": [ 13, 26 ] }
+                      }
+                    ],
+                    \"loc\": { \"start\": [ 13, 8 ], \"end\": [ 13, 27 ] }
+                  }
+                ]
+              },
+              {
+                \"kind\": \"InlineFragment\",
+                \"typeCondition\": null,
+                \"selectionSet\": {
+                  \"kind\": \"SelecitonSet\",
+                  \"selections\": [
+                    {
+                      \"kind\": \"Field\",
+                      \"alias\": null,
+                      \"name\": {
+                        \"kind\": \"Name\",
+                        \"value\": \"id\",
+                        \"loc\": { \"start\": [ 17, 6 ], \"end\": [ 17, 8 ] }
+                      },
+                      \"args\": null,
+                      \"selectionSet\": null,
+                      \"directives\": null
+                    }
+                  ]
+                },
+                \"directives\": null
+              }
+            ]
+          },
+          \"directives\": null
+        }
+      ]
+    },
+    \"directives\": null
+  },
+  {
+    \"kind\": \"OperationDef\",
+    \"operation\": \"mutation\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"likeStory\",
+      \"loc\": { \"start\": [ 22, 9 ], \"end\": [ 22, 18 ] }
+    },
+    \"selectionSet\": {
+      \"kind\": \"SelecitonSet\",
+      \"selections\": [
+        {
+          \"kind\": \"Field\",
+          \"alias\": null,
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"like\",
+            \"loc\": { \"start\": [ 23, 2 ], \"end\": [ 23, 6 ] }
+          },
+          \"args\": [
+            {
+              \"kind\": \"Argument\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"story\",
+                \"loc\": { \"start\": [ 23, 7 ], \"end\": [ 23, 12 ] }
+              },
+              \"value\": {
+                \"kind\": \"Value\",
+                \"variant\": \"IntValue\",
+                \"value\": \"123\",
+                \"loc\": { \"start\": [ 23, 14 ], \"end\": [ 23, 17 ] }
+              },
+              \"loc\": { \"start\": [ 23, 7 ], \"end\": [ 23, 17 ] }
+            }
+          ],
+          \"selectionSet\": {
+            \"kind\": \"SelecitonSet\",
+            \"selections\": [
+              {
+                \"kind\": \"Field\",
+                \"alias\": null,
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"story\",
+                  \"loc\": { \"start\": [ 24, 4 ], \"end\": [ 24, 9 ] }
+                },
+                \"args\": null,
+                \"selectionSet\": {
+                  \"kind\": \"SelecitonSet\",
+                  \"selections\": [
+                    {
+                      \"kind\": \"Field\",
+                      \"alias\": null,
+                      \"name\": {
+                        \"kind\": \"Name\",
+                        \"value\": \"id\",
+                        \"loc\": { \"start\": [ 25, 6 ], \"end\": [ 25, 8 ] }
+                      },
+                      \"args\": null,
+                      \"selectionSet\": null,
+                      \"directives\": null
+                    }
+                  ]
+                },
+                \"directives\": null
+              }
+            ]
+          },
+          \"directives\": [
+            {
+              \"kind\": \"Directive\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"defer\",
+                \"loc\": { \"start\": [ 23, 20 ], \"end\": [ 23, 25 ] }
+              },
+              \"arguments\": null,
+              \"loc\": { \"start\": [ 23, 19 ], \"end\": [ 23, 25 ] }
+            }
+          ]
+        }
+      ]
+    },
+    \"directives\": null
+  },
+  {
+    \"kind\": \"OperationDef\",
+    \"operation\": \"subscription\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"StoryLikeSubscription\",
+      \"loc\": { \"start\": [ 30, 13 ], \"end\": [ 30, 34 ] }
+    },
+    \"selectionSet\": {
+      \"kind\": \"SelecitonSet\",
+      \"selections\": [
+        {
+          \"kind\": \"Field\",
+          \"alias\": null,
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"storyLikeSubscribe\",
+            \"loc\": { \"start\": [ 31, 2 ], \"end\": [ 31, 20 ] }
+          },
+          \"args\": [
+            {
+              \"kind\": \"Argument\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"input\",
+                \"loc\": { \"start\": [ 31, 21 ], \"end\": [ 31, 26 ] }
+              },
+              \"value\": {
+                \"kind\": \"Value\",
+                \"variant\": \"Variable\",
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"input\",
+                  \"loc\": { \"start\": [ 31, 29 ], \"end\": [ 31, 34 ] }
+                },
+                \"loc\": { \"start\": [ 31, 28 ], \"end\": [ 31, 34 ] }
+              },
+              \"loc\": { \"start\": [ 31, 21 ], \"end\": [ 31, 34 ] }
+            }
+          ],
+          \"selectionSet\": {
+            \"kind\": \"SelecitonSet\",
+            \"selections\": [
+              {
+                \"kind\": \"Field\",
+                \"alias\": null,
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"story\",
+                  \"loc\": { \"start\": [ 32, 4 ], \"end\": [ 32, 9 ] }
+                },
+                \"args\": null,
+                \"selectionSet\": {
+                  \"kind\": \"SelecitonSet\",
+                  \"selections\": [
+                    {
+                      \"kind\": \"Field\",
+                      \"alias\": null,
+                      \"name\": {
+                        \"kind\": \"Name\",
+                        \"value\": \"likers\",
+                        \"loc\": { \"start\": [ 33, 6 ], \"end\": [ 33, 12 ] }
+                      },
+                      \"args\": null,
+                      \"selectionSet\": {
+                        \"kind\": \"SelecitonSet\",
+                        \"selections\": [
+                          {
+                            \"kind\": \"Field\",
+                            \"alias\": null,
+                            \"name\": {
+                              \"kind\": \"Name\",
+                              \"value\": \"count\",
+                              \"loc\": {
+                                \"start\": [ 34, 8 ],
+                                \"end\": [ 34, 13 ]
+                              }
+                            },
+                            \"args\": null,
+                            \"selectionSet\": null,
+                            \"directives\": null
+                          }
+                        ]
+                      },
+                      \"directives\": null
+                    },
+                    {
+                      \"kind\": \"Field\",
+                      \"alias\": null,
+                      \"name\": {
+                        \"kind\": \"Name\",
+                        \"value\": \"likeSentence\",
+                        \"loc\": { \"start\": [ 36, 6 ], \"end\": [ 36, 18 ] }
+                      },
+                      \"args\": null,
+                      \"selectionSet\": {
+                        \"kind\": \"SelecitonSet\",
+                        \"selections\": [
+                          {
+                            \"kind\": \"Field\",
+                            \"alias\": null,
+                            \"name\": {
+                              \"kind\": \"Name\",
+                              \"value\": \"text\",
+                              \"loc\": {
+                                \"start\": [ 37, 8 ],
+                                \"end\": [ 37, 12 ]
+                              }
+                            },
+                            \"args\": null,
+                            \"selectionSet\": null,
+                            \"directives\": null
+                          }
+                        ]
+                      },
+                      \"directives\": null
+                    }
+                  ]
+                },
+                \"directives\": null
+              }
+            ]
+          },
+          \"directives\": null
+        }
+      ]
+    },
+    \"directives\": null
+  },
+  {
+    \"kind\": \"OperationDef\",
+    \"operation\": \"query\",
+    \"name\": null,
+    \"selectionSet\": {
+      \"kind\": \"SelecitonSet\",
+      \"selections\": [
+        {
+          \"kind\": \"Field\",
+          \"alias\": null,
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"unnamed\",
+            \"loc\": { \"start\": [ 44, 2 ], \"end\": [ 44, 9 ] }
+          },
+          \"args\": [
+            {
+              \"kind\": \"Argument\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"truthy\",
+                \"loc\": { \"start\": [ 44, 10 ], \"end\": [ 44, 16 ] }
+              },
+              \"value\": {
+                \"kind\": \"Value\",
+                \"variant\": \"BooleanValue\",
+                \"value\": true,
+                \"loc\": { \"start\": [ 44, 18 ], \"end\": [ 44, 22 ] }
+              },
+              \"loc\": { \"start\": [ 44, 10 ], \"end\": [ 44, 22 ] }
+            },
+            {
+              \"kind\": \"Argument\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"falsey\",
+                \"loc\": { \"start\": [ 44, 24 ], \"end\": [ 44, 30 ] }
+              },
+              \"value\": {
+                \"kind\": \"Value\",
+                \"variant\": \"BooleanValue\",
+                \"value\": false,
+                \"loc\": { \"start\": [ 44, 32 ], \"end\": [ 44, 37 ] }
+              },
+              \"loc\": { \"start\": [ 44, 24 ], \"end\": [ 44, 37 ] }
+            }
+          ],
+          \"selectionSet\": null,
+          \"directives\": null
+        },
+        {
+          \"kind\": \"Field\",
+          \"alias\": null,
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"query\",
+            \"loc\": { \"start\": [ 45, 2 ], \"end\": [ 45, 7 ] }
+          },
+          \"args\": null,
+          \"selectionSet\": null,
+          \"directives\": null
+        }
+      ]
+    },
+    \"directives\": null
+  }
+]
+"
+`;
+
+exports[`parser Parse scalar.graphql 1`] = `
+"[
+  {
+    \"kind\": \"ScalarTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"CustomScalar\",
+      \"loc\": { \"start\": [ 1, 7 ], \"end\": [ 1, 19 ] }
+    },
+    \"directives\": null
+  },
+  {
+    \"kind\": \"ScalarTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"AnnotatedScalar\",
+      \"loc\": { \"start\": [ 3, 7 ], \"end\": [ 3, 22 ] }
+    },
+    \"directives\": [
+      {
+        \"kind\": \"Directive\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"onScalar\",
+          \"loc\": { \"start\": [ 3, 24 ], \"end\": [ 3, 32 ] }
+        },
+        \"arguments\": null,
+        \"loc\": { \"start\": [ 3, 23 ], \"end\": [ 3, 32 ] }
+      }
+    ]
+  }
+]
+"
+`;
+
+exports[`parser Parse schema.graphql 1`] = `
+"[
+  {
+    \"kind\": \"SchemaDef\",
+    \"operationTypes\": [
+      {
+        \"kind\": \"OperationType\",
+        \"operation\": \"query\",
+        \"type\": {
+          \"kind\": \"Name\",
+          \"value\": \"QueryType\",
+          \"loc\": { \"start\": [ 2, 9 ], \"end\": [ 2, 18 ] }
+        }
+      },
+      {
+        \"kind\": \"OperationType\",
+        \"operation\": \"mutation\",
+        \"type\": {
+          \"kind\": \"Name\",
+          \"value\": \"MutationType\",
+          \"loc\": { \"start\": [ 3, 12 ], \"end\": [ 3, 24 ] }
+        }
+      }
+    ],
+    \"directives\": null
+  }
+]
+"
+`;
+
+exports[`parser Parse type.graphql 1`] = `
+"[
+  {
+    \"kind\": \"ObjectTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"Foo\",
+      \"loc\": { \"start\": [ 1, 5 ], \"end\": [ 1, 8 ] }
+    },
+    \"fields\": [
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"one\",
+          \"loc\": { \"start\": [ 2, 2 ], \"end\": [ 2, 5 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Type\",
+            \"loc\": { \"start\": [ 2, 7 ], \"end\": [ 2, 11 ] }
+          }
+        },
+        \"args\": [],
+        \"directives\": null
+      },
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"two\",
+          \"loc\": { \"start\": [ 3, 2 ], \"end\": [ 3, 5 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Type\",
+            \"loc\": { \"start\": [ 3, 29 ], \"end\": [ 3, 33 ] }
+          }
+        },
+        \"args\": [
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"argument\",
+              \"loc\": { \"start\": [ 3, 6 ], \"end\": [ 3, 14 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"NonNull\",
+              \"type\": {
+                \"kind\": \"Type\",
+                \"variant\": \"Named\",
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"InputType\",
+                  \"loc\": { \"start\": [ 3, 16 ], \"end\": [ 3, 25 ] }
+                }
+              },
+              \"loc\": { \"start\": [ 3, 16 ], \"end\": [ 3, 26 ] }
+            },
+            \"defaultValue\": null,
+            \"directives\": null,
+            \"loc\": { \"start\": [ 3, 6 ], \"end\": [ 3, 26 ] }
+          }
+        ],
+        \"directives\": null
+      },
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"three\",
+          \"loc\": { \"start\": [ 4, 2 ], \"end\": [ 4, 7 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Int\",
+            \"loc\": { \"start\": [ 4, 45 ], \"end\": [ 4, 48 ] }
+          }
+        },
+        \"args\": [
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"argument\",
+              \"loc\": { \"start\": [ 4, 8 ], \"end\": [ 4, 16 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"Named\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"InputType\",
+                \"loc\": { \"start\": [ 4, 18 ], \"end\": [ 4, 27 ] }
+              }
+            },
+            \"defaultValue\": null,
+            \"directives\": null,
+            \"loc\": { \"start\": [ 4, 8 ], \"end\": [ 4, 27 ] }
+          },
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"other\",
+              \"loc\": { \"start\": [ 4, 29 ], \"end\": [ 4, 34 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"Named\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"String\",
+                \"loc\": { \"start\": [ 4, 36 ], \"end\": [ 4, 42 ] }
+              }
+            },
+            \"defaultValue\": null,
+            \"directives\": null,
+            \"loc\": { \"start\": [ 4, 29 ], \"end\": [ 4, 42 ] }
+          }
+        ],
+        \"directives\": null
+      },
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"four\",
+          \"loc\": { \"start\": [ 5, 2 ], \"end\": [ 5, 6 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"String\",
+            \"loc\": { \"start\": [ 5, 37 ], \"end\": [ 5, 43 ] }
+          }
+        },
+        \"args\": [
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"argument\",
+              \"loc\": { \"start\": [ 5, 7 ], \"end\": [ 5, 15 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"Named\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"String\",
+                \"loc\": { \"start\": [ 5, 17 ], \"end\": [ 5, 23 ] }
+              }
+            },
+            \"defaultValue\": {
+              \"kind\": \"Value\",
+              \"variant\": \"StringValue\",
+              \"value\": \"string\",
+              \"loc\": { \"start\": [ 5, 33 ], \"end\": [ 5, 34 ] }
+            },
+            \"directives\": null,
+            \"loc\": { \"start\": [ 5, 7 ], \"end\": [ 5, 34 ] }
+          }
+        ],
+        \"directives\": null
+      },
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"five\",
+          \"loc\": { \"start\": [ 6, 2 ], \"end\": [ 6, 6 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"String\",
+            \"loc\": { \"start\": [ 6, 51 ], \"end\": [ 6, 57 ] }
+          }
+        },
+        \"args\": [
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"argument\",
+              \"loc\": { \"start\": [ 6, 7 ], \"end\": [ 6, 15 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"List\",
+              \"type\": {
+                \"kind\": \"Type\",
+                \"variant\": \"Named\",
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"String\",
+                  \"loc\": { \"start\": [ 6, 18 ], \"end\": [ 6, 24 ] }
+                }
+              },
+              \"loc\": { \"start\": [ 6, 17 ], \"end\": [ 6, 25 ] }
+            },
+            \"defaultValue\": {
+              \"kind\": \"Value\",
+              \"variant\": \"ListValue\",
+              \"values\": [
+                {
+                  \"kind\": \"Value\",
+                  \"variant\": \"StringValue\",
+                  \"value\": \"string\",
+                  \"loc\": { \"start\": [ 6, 36 ], \"end\": [ 6, 37 ] }
+                },
+                {
+                  \"kind\": \"Value\",
+                  \"variant\": \"StringValue\",
+                  \"value\": \"string\",
+                  \"loc\": { \"start\": [ 6, 46 ], \"end\": [ 6, 47 ] }
+                }
+              ],
+              \"loc\": { \"start\": [ 6, 28 ], \"end\": [ 6, 48 ] }
+            },
+            \"directives\": null,
+            \"loc\": { \"start\": [ 6, 7 ], \"end\": [ 6, 48 ] }
+          }
+        ],
+        \"directives\": null
+      },
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"six\",
+          \"loc\": { \"start\": [ 7, 2 ], \"end\": [ 7, 5 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Type\",
+            \"loc\": { \"start\": [ 7, 45 ], \"end\": [ 7, 49 ] }
+          }
+        },
+        \"args\": [
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"argument\",
+              \"loc\": { \"start\": [ 7, 6 ], \"end\": [ 7, 14 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"Named\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"InputType\",
+                \"loc\": { \"start\": [ 7, 16 ], \"end\": [ 7, 25 ] }
+              }
+            },
+            \"defaultValue\": {
+              \"kind\": \"Value\",
+              \"variant\": \"ObjectValue\",
+              \"fields\": [
+                {
+                  \"kind\": \"ObjectField\",
+                  \"name\": {
+                    \"kind\": \"Name\",
+                    \"value\": \"key\",
+                    \"loc\": { \"start\": [ 7, 29 ], \"end\": [ 7, 32 ] }
+                  },
+                  \"value\": {
+                    \"kind\": \"Value\",
+                    \"variant\": \"StringValue\",
+                    \"value\": \"value\",
+                    \"loc\": { \"start\": [ 7, 40 ], \"end\": [ 7, 41 ] }
+                  },
+                  \"loc\": { \"start\": [ 7, 29 ], \"end\": [ 7, 41 ] }
+                }
+              ],
+              \"loc\": { \"start\": [ 7, 28 ], \"end\": [ 7, 42 ] }
+            },
+            \"directives\": null,
+            \"loc\": { \"start\": [ 7, 6 ], \"end\": [ 7, 42 ] }
+          }
+        ],
+        \"directives\": null
+      }
+    ],
+    \"interfaces\": [
+      {
+        \"kind\": \"Name\",
+        \"value\": \"Bar\",
+        \"loc\": { \"start\": [ 1, 20 ], \"end\": [ 1, 23 ] }
+      }
+    ],
+    \"directives\": null
+  },
+  {
+    \"kind\": \"ObjectTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"AnnotatedObject\",
+      \"loc\": { \"start\": [ 10, 5 ], \"end\": [ 10, 20 ] }
+    },
+    \"fields\": [
+      {
+        \"kind\": \"FieldDef\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"annotatedField\",
+          \"loc\": { \"start\": [ 11, 2 ], \"end\": [ 11, 16 ] }
+        },
+        \"type\": {
+          \"kind\": \"Type\",
+          \"variant\": \"Named\",
+          \"name\": {
+            \"kind\": \"Name\",
+            \"value\": \"Type\",
+            \"loc\": { \"start\": [ 11, 48 ], \"end\": [ 11, 52 ] }
+          }
+        },
+        \"args\": [
+          {
+            \"kind\": \"InputValueDef\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"arg\",
+              \"loc\": { \"start\": [ 11, 17 ], \"end\": [ 11, 20 ] }
+            },
+            \"type\": {
+              \"kind\": \"Type\",
+              \"variant\": \"Named\",
+              \"name\": {
+                \"kind\": \"Name\",
+                \"value\": \"Type\",
+                \"loc\": { \"start\": [ 11, 22 ], \"end\": [ 11, 26 ] }
+              }
+            },
+            \"defaultValue\": {
+              \"kind\": \"Value\",
+              \"variant\": \"StringValue\",
+              \"value\": \"default\",
+              \"loc\": { \"start\": [ 11, 37 ], \"end\": [ 11, 38 ] }
+            },
+            \"directives\": [
+              {
+                \"kind\": \"Directive\",
+                \"name\": {
+                  \"kind\": \"Name\",
+                  \"value\": \"onArg\",
+                  \"loc\": { \"start\": [ 11, 40 ], \"end\": [ 11, 45 ] }
+                },
+                \"arguments\": null,
+                \"loc\": { \"start\": [ 11, 39 ], \"end\": [ 11, 45 ] }
+              }
+            ],
+            \"loc\": { \"start\": [ 11, 17 ], \"end\": [ 11, 45 ] }
+          }
+        ],
+        \"directives\": [
+          {
+            \"kind\": \"Directive\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"onField\",
+              \"loc\": { \"start\": [ 11, 54 ], \"end\": [ 11, 61 ] }
+            },
+            \"arguments\": null,
+            \"loc\": { \"start\": [ 11, 53 ], \"end\": [ 11, 61 ] }
+          }
+        ]
+      }
+    ],
+    \"interfaces\": [],
+    \"directives\": [
+      {
+        \"kind\": \"Directive\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"onObject\",
+          \"loc\": { \"start\": [ 10, 22 ], \"end\": [ 10, 30 ] }
+        },
+        \"arguments\": [
+          {
+            \"kind\": \"Argument\",
+            \"name\": {
+              \"kind\": \"Name\",
+              \"value\": \"arg\",
+              \"loc\": { \"start\": [ 10, 31 ], \"end\": [ 10, 34 ] }
+            },
+            \"value\": {
+              \"kind\": \"Value\",
+              \"variant\": \"StringValue\",
+              \"value\": \"value\",
+              \"loc\": { \"start\": [ 10, 42 ], \"end\": [ 10, 43 ] }
+            },
+            \"loc\": { \"start\": [ 10, 31 ], \"end\": [ 10, 43 ] }
+          }
+        ],
+        \"loc\": { \"start\": [ 10, 21 ], \"end\": [ 10, 44 ] }
+      }
+    ]
+  },
+  {
+    \"kind\": \"ObjectTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"NoFields\",
+      \"loc\": { \"start\": [ 14, 5 ], \"end\": [ 14, 13 ] }
+    },
+    \"fields\": [],
+    \"interfaces\": [],
+    \"directives\": null
+  }
+]
+"
+`;
+
+exports[`parser Parse union.graphql 1`] = `
+"[
+  {
+    \"kind\": \"UnionTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"Feed\",
+      \"loc\": { \"start\": [ 1, 6 ], \"end\": [ 1, 10 ] }
+    },
+    \"types\": [
+      {
+        \"kind\": \"Name\",
+        \"value\": \"Story\",
+        \"loc\": { \"start\": [ 1, 13 ], \"end\": [ 1, 18 ] }
+      },
+      {
+        \"kind\": \"Name\",
+        \"value\": \"Article\",
+        \"loc\": { \"start\": [ 1, 21 ], \"end\": [ 1, 28 ] }
+      },
+      {
+        \"kind\": \"Name\",
+        \"value\": \"Advert\",
+        \"loc\": { \"start\": [ 1, 31 ], \"end\": [ 1, 37 ] }
+      }
+    ],
+    \"directives\": null
+  },
+  {
+    \"kind\": \"UnionTypeDef\",
+    \"name\": {
+      \"kind\": \"Name\",
+      \"value\": \"AnnotatedUnion\",
+      \"loc\": { \"start\": [ 3, 6 ], \"end\": [ 3, 20 ] }
+    },
+    \"types\": [
+      {
+        \"kind\": \"Name\",
+        \"value\": \"A\",
+        \"loc\": { \"start\": [ 3, 32 ], \"end\": [ 3, 33 ] }
+      },
+      {
+        \"kind\": \"Name\",
+        \"value\": \"B\",
+        \"loc\": { \"start\": [ 3, 36 ], \"end\": [ 3, 37 ] }
+      }
+    ],
+    \"directives\": [
+      {
+        \"kind\": \"Directive\",
+        \"name\": {
+          \"kind\": \"Name\",
+          \"value\": \"onUnion\",
+          \"loc\": { \"start\": [ 3, 22 ], \"end\": [ 3, 29 ] }
+        },
+        \"arguments\": null,
+        \"loc\": { \"start\": [ 3, 21 ], \"end\": [ 3, 29 ] }
+      }
+    ]
+  }
+]
+"
+`;

@@ -1,0 +1,10 @@
+{
+  "name": "ocaml-graphql",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jest": "^16.0.2"
+  }
+}

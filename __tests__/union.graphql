@@ -1,0 +1,3 @@
+union Feed = Story | Article | Advert
+
+union AnnotatedUnion @onUnion = A | B

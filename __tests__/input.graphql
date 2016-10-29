@@ -1,0 +1,8 @@
+input InputType {
+  key: String!
+  answer: Int = 42
+}
+
+input AnnotatedInput @onInputObjectType {
+  annotatedField: Type @onField
+}
