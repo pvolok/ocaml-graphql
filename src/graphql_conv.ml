@@ -1,6 +1,6 @@
+open Utils
 module Ast = Graphql_ast
 module Schema = Graphql_schema
-module SMap = Schema.SMap
 
 let names_to_strings names = List.map (fun (_, name) -> name) names
 
@@ -29,6 +29,7 @@ let conv_fields fields =
       Schema.Field.name = name;
       args = conv_input_vals field.Ast.FieldDef.args;
       type_;
+      resolve = fun _ -> Obj.magic ();
     } in
     SMap.add name field map
   ) SMap.empty fields

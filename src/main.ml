@@ -1,4 +1,4 @@
-open Graphql_schema
+open Utils
 open Graphql_ast
 
 module T = Graphql_schema.Type
@@ -17,4 +17,11 @@ let () =
         print_endline ("type " ^ name);
         SMap.iter (fun name _ -> print_endline ("  " ^ name)) fields
     | _ -> ()
-  ) schema.type_map;
+  ) schema.Graphql_schema.type_map
+
+let () =
+  let lexbuf = Lexing.from_string "{ me { name } }" in
+  let query = Graphql_parser.doc Graphql_lexer.token lexbuf in
+  let schema = My_schema.schema in
+  let result = Graphql_execution.execute schema query in
+  print_endline (Graphql_data.to_json result)

@@ -1,4 +1,4 @@
-module SMap = Map.Make(String)
+open Utils
 
 module rec Type: sig
   type def =
@@ -20,6 +20,7 @@ and Field: sig
     name: string;
     args: InputVal.t SMap.t;
     type_: Type.t;
+    resolve: 'a 'b . 'a -> 'b
   }
 end = Field
 

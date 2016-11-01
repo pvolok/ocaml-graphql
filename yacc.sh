@@ -1,1 +1,1 @@
-ocamlbuild -r src/main.byte --
+ocamlbuild -use-ocamlfind -pkgs yojson -r src/main.byte --
